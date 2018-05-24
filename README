@@ -1,0 +1,26 @@
+python RatingCounter.py ml-100k/u.data
+
+python Friends-By-Age.py input/fakefriends.csv > output/friendsByAge.txt
+
+python Min-Temperatures.py input/1800.csv > output/minTemp.txt
+
+python WordFrequency.py input/Book.txt > output/wordCount.txt
+
+python WordFrequencySorted.py input/Book.txt > output/wordSorted.txt
+
+python customerOrders.py input/customer-orders.csv > output/customerOrders.txt
+
+python customerOrderSorted.py input/customer-orders.csv > output/customerOrdersSorted.txt
+
+python MostPopularMovieNicer.py --items=input/u.item input/u.data
+
+python MostPopularSuperhero.py --names=input/Marvel-Names.txt input/Marvel-Graph.txt
+
+python ProcessMarvel.py 2548
+
+python BFSIteration.py --target=100 input/BFS-iteration-0.txt > input/BFS-iteration-1.txt
+python BFSIteration.py --target=100 input/BFS-iteration-1.txt > input/BFS-iteration-2.txt
+
+python MovieSimilarities.py --items=input/u.item input/u.data > moviesRecommend.txt
+
+When running on EMR distributed nodes, the results will be spreaded into multiple sorted section on the output file
